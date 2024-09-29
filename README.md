@@ -2,14 +2,7 @@
    - Run using docker
    ```bash
    docker-compose up
-   docker compose exec directus npx directus schema snapshot /directus/snapshots/snapshot.yaml
-   ```
-   - Without docker
-   ```bash
-   npm install
-   npm run bootstrap
-   npm run snapshot-apply
-   npm run start
+   docker exec -it directus npx directus schema apply ./snapshots/snapshot.yaml
    ```
 2. Environment configuration
    - Copy the `.env.example` to a new file named `.env` and adjust as needed.
