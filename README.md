@@ -1,4 +1,10 @@
 1. Setup the project
+   - Run using docker
+   ```bash
+   docker-compose up
+   docker compose exec directus npx directus schema snapshot /directus/snapshots/snapshot.yaml
+   ```
+   - Without docker
    ```bash
    npm install
    npm run bootstrap
